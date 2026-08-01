@@ -1,0 +1,4 @@
+data/
+results/
+srs/__pycache__/
+.venv

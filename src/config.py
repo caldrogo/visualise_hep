@@ -39,15 +39,15 @@ EXTRA_STOPWORDS = {
     "result", "results", "paper", "study", "work", "approach", "method",
     "case", "term", "terms", "way", "role", "order", "context", "sample",
     "set", "value", "values", "effect", "effects", "model", "models",
-    "analysis", "framework",
+    "analysis", "framework", 
 }
 
 # ---- Phrase clustering -------------------------------------------------------
 CLUSTER_MIN_PHRASE_COUNT = 3       # ignore phrases seen fewer times than this
 CLUSTER_BACKEND = "embedding"          # "tfidf" (offline) or "embedding" (needs internet)
 EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
-CLUSTER_SIMILARITY_THRESHOLD = 0.55  # cosine similarity to link two phrases
-CLUSTER_KNN = 15                     # neighbors considered per phrase when linking
+CLUSTER_SIMILARITY_THRESHOLD = 0.7  # cosine similarity to link two phrases
+CLUSTER_KNN = 10                     # neighbors considered per phrase when linking
 
 # ---- Trend analysis -----------------------------------------------------------
 TIME_BUCKET = "year"               # "year" or "quarter"
