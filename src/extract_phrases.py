@@ -28,6 +28,7 @@ import logging
 from typing import List
 
 import spacy
+import scispacy
 
 import config
 

@@ -30,7 +30,7 @@ RETRY_BACKOFF_BASE_SECONDS = 10   # wait = BASE * 2**attempt, capped below
 RETRY_BACKOFF_MAX_SECONDS = 120
 
 # ---- Phrase extraction ------------------------------------------------------
-SPACY_MODEL = "en_core_web_sm"
+SPACY_MODEL = "en_core_sci_sm"  # scispaCy model, smaller/faster than en_core_web_sm
 PHRASE_MIN_TOKENS = 2
 PHRASE_MAX_TOKENS = 5
 # Generic/low-signal words that survive POS filtering but carry no topical
