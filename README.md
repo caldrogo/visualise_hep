@@ -1,9 +1,13 @@
-# arXiv HEP Emerging-Topics Pipeline
+# Visualise HEP
+
+[!Screenshot](visualise_hep.png)
 
 Four-stage pipeline: download HEP (high-energy physics) paper metadata from
 arXiv → extract candidate topic phrases from titles/abstracts → group
 near-duplicate phrases into topic clusters → rank clusters by growth in
 relative frequency to surface emerging research areas.
+
+The Plotly Dash app is deployed here https://3e38fea6-fe42-4acc-9db1-2496573e0b93.plotly.app/
 
 ```
 fetch_arxiv.py  →  extract_phrases.py  →  cluster_phrases.py  →  trend_analysis.py
