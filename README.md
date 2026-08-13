@@ -1,11 +1,12 @@
 # Visualise HEP
 
-[!Screenshot](visualise_hep.png)
+![Screenshot](visualise_hep.png)
 
-Four-stage pipeline: download HEP (high-energy physics) paper metadata from
-arXiv → extract candidate topic phrases from titles/abstracts → group
-near-duplicate phrases into topic clusters → rank clusters by growth in
-relative frequency to surface emerging research areas.
+Four-stage pipeline
+1. Download HEP (high-energy physics) paper metadata from arXiv.
+2. Extract candidate topic phrases from titles and abstracts.
+3. Group near-duplicate phrases into topic clusters using SentenceTransformers and HDBSCAN.
+4. Rank clusters by growth in relative frequency to surface emerging research areas.
 
 The Plotly Dash app is deployed here https://3e38fea6-fe42-4acc-9db1-2496573e0b93.plotly.app/
 
